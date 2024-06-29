@@ -15,7 +15,7 @@ int main()
   char letter;
 
 
-  while(answer!=codeword && misses <=5)
+  while(answer!=codeword && misses <= codeword.length())
   {
     cout<< "HINT: " <<hint << endl;
     display_misses(misses);
@@ -44,7 +44,7 @@ int main()
       misses++;
     }
     guess = false;
-    cout<< misses <<endl;
+    cout<< "Total wrong inputs: " << misses <<endl;
   }
   display_status(incorrect, answer);
   end_game(answer, codeword);
