@@ -24,3 +24,18 @@ Run on **Windows**:
 ```cmd
 hangman.exe
 ```
+
+## intructions to play
+
+### Before Compile & Run
+ 
+ * The *codeword* is to be updated in the main.cpp 
+ * also modify the *hint* in main.cpp
+ * initialize *answer* with equal no of spaces as letters in *codeword*.
+
+### After Compile & Run
+
+ * You can enter only one letter at a time
+ * for correct input, no loss
+ * for incorrect letter input, 1 loss
+ * Total loss depends on letters in *codeword*
