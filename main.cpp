@@ -5,20 +5,23 @@ using namespace std;
 int main()
 {
   greet();
-
-  string codeword = "codingcleverly";
-  string answer = "______________";
+  
+  string codeword = "batsman";
+  string hint = "Type of a  player in Cricket";
+  string answer = "_______";
   int misses = 0;
   vector<char> incorrect;
   bool guess = false;
   char letter;
 
 
-  while(answer!=codeword && misses < 7)
+  while(answer!=codeword && misses <=5)
   {
+    cout<< "HINT: " <<hint << endl;
     display_misses(misses);
     display_status(incorrect, answer);
-
+    
+    
     cout<<"\n\nPlease enter your guess: ";
     cin>>letter;
 
@@ -41,8 +44,9 @@ int main()
       misses++;
     }
     guess = false;
+    cout<< misses <<endl;
   }
-
+  display_status(incorrect, answer);
   end_game(answer, codeword);
   return 0;
 }
