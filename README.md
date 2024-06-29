@@ -29,7 +29,7 @@ hangman.exe
 
 ### Before Compile & Run
  
- * The *codeword* is to be updated in the main.cpp 
+ * The *codeword* is to be updated in the main.cpp, **use lowercase only**
  * also modify the *hint* in main.cpp
  * initialize *answer* with equal no of spaces as letters in *codeword*.
 
